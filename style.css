@@ -1,0 +1,867 @@
+/* body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "section1 section1 section1"
+    "section2 section2 section2"
+    "section3 section3 section3"
+    "section4 section4 section4"
+    "footer footer foter";
+} */
+
+* {
+    font-family: "Chiron GoRound TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+}
+
+.section1 {
+    /* grid-area: section1; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "p3 p3 p3"
+    "txt41 txt42 txt42"
+    "txt5 txt52 txt52";
+}
+
+.section2 {
+    /* grid-area: section2; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "p6 p6 p62"
+    "txt71 txt72 txt73";
+}
+
+.section3 {
+    /* grid-area: section3; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "p8 p8 p8"
+    "title9 title9 title9"
+    "txt101 txt102 txt103"
+    "title11 title11 title11"
+    "txt121 txt122 txt123"
+    "title13 title13 title13"
+    "txt141 txt142 txt143"
+    "title15 title15 title15"
+    "txt161 txt162 txt163"
+    "title17 title17 title17"
+    "txt181 txt182 txt183"
+    "title19 title19 title19"
+    "txt201 txt202 txt203";
+}
+
+.section4 {
+    /* grid-area: section4; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "p21 p21 txt223"
+    "txt221 txt222 txt223";
+}
+
+header {
+    /* grid-area: header; */
+    background-color: #6b5b4d;
+    color: #fff8e7;
+    text-align: center;
+    padding: 1.5%;
+    font-size: clamp(20px, 5vw, 50px); /* 字型大小隨著視窗變化 */
+}
+
+nav {
+    /* grid-area: nav; */
+    background-color: #e0cbaf;
+    text-align: center;
+    padding: 1.5%;
+    font-size: clamp(10px, 3vw, 25px);
+}
+
+article {
+    background-color: #fff8e7;
+    color: #5a3e2b;
+    padding-right: 3%;
+    padding-left: 3%;
+    font-size: clamp(10px, 2vw, 25px);
+}
+
+footer {
+    grid-area: footer;
+    background-color: #6b5b4d;
+    color: #fff8e7;
+    text-align: center;
+    padding: 1.5%;
+    font-size: clamp(10px, 3vw, 25px);
+}
+
+.img1 {
+    max-width: 100%;
+}
+
+.img2 {
+    max-width: 50%;
+    padding-left: 25%;
+}
+
+.img3 {
+    max-width: 20%;
+    transition: transform 0.3s ease;
+}
+
+/* .img4 {
+    max-width: 10%;
+} */
+
+video {
+    max-width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+/* .table1 {
+    width: 100%;
+    table-layout: fixed;
+    overflow: hidden;
+} */
+
+.audioword {
+    padding-top: 10%;    
+}
+
+.audio {
+    width: 100%;
+    height: 28px;
+}
+
+.grade {
+    display: inline-block; /**/
+    background-color: #6dc2b3;
+    padding: 0.5%;
+    border-radius: 25%;
+}
+
+.bgcolor {
+    background-color: #e0cbaf;
+}
+
+.bgcolor2 {
+    width: 90%;
+    background: linear-gradient(to right, #ffa94d , #ffffff, #ffffff);
+}
+
+.top {
+    z-index: 1;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    max-width: 10%;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+/*各種動畫*/
+nav a {
+    color: #5a3e2b;
+    padding: 1%;
+}
+
+nav a:hover {
+    color: #6dc2b3;
+}
+
+.img3:hover {
+    transform: scale(1.2);
+}
+
+.top:hover {
+    animation: shake 2s;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-10deg); }
+    20% { transform: rotate(10deg); }
+    30% { transform: rotate(-10deg); }
+    40% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    60% { transform: rotate(10deg); }
+    70% { transform: rotate(-10deg); }
+    80% { transform: rotate(10deg); }
+    90% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* .jump {
+    display: inline-block;
+    transform: scale(1);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.jump:target {
+    transform: scale(1.1);
+    background-color: #fff3b0;
+    border-radius: 5px;
+} */
+
+/* @keyframes scaleEffect {
+    0% { transform: scale(0.95); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+} */
+
+.section1:hover {
+    cursor: url(image/download.cur), url(image/download.png), auto;
+}
+
+/* 程式技能動畫 */
+.py {
+    width: 60%;
+    background-color: #ffa94d;
+    /* color: #fff8e7;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5a3e2b; */
+    white-space: nowrap;
+}
+
+.item71:hover .py{
+    animation: py 2s;
+}
+
+@keyframes py {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+.java {
+    width: 70%;
+    background-color: #ffa94d;
+    white-space: nowrap;
+}
+
+.item71:hover .java{
+    animation: java 2s;
+}
+
+@keyframes java {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+.html {
+    width: 50%;
+    background-color: #ffa94d;
+    white-space: nowrap;
+}
+
+.item71:hover .html{
+    animation: html 2s;
+}
+
+@keyframes html {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+.css {
+    width: 50%;
+    background-color: #ffa94d;
+    white-space: nowrap;
+}
+
+.item71:hover .css{
+    animation: css 2s;
+}
+
+@keyframes css {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+.c {
+    width: 40%;
+    background-color: #ffa94d;
+    white-space: nowrap;
+}
+
+.item71:hover .c{
+    animation: c 2s;
+}
+
+@keyframes c {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+/* 專業技能動畫 */
+.bar1 {
+    width: 60%;
+    background-color: #ffa94d;
+    white-space: nowrap; /* 防止中文字換行 */
+}
+
+.item72:hover .bar1{
+    animation: bar1 2s;
+}
+
+@keyframes bar1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+.bar2 {
+    width: 80%;
+    background-color: #ffa94d;
+    white-space: nowrap;
+}
+
+.item72:hover .bar2{
+    animation: bar2 2s;
+}
+
+@keyframes bar2 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+.bar3 {
+    width: 40%;
+    background-color: #ffa94d;
+    white-space: nowrap;
+}
+
+.item72:hover .bar3{
+    animation: bar3 2s;
+}
+
+@keyframes bar3 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+.bar4 {
+    width: 40%;
+    background-color: #ffa94d;
+    white-space: nowrap;
+}
+
+.item72:hover .bar4{
+    animation: bar4 2s;
+}
+
+@keyframes bar4 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+.bar5 {
+    width: 60%;
+    background-color: #ffa94d;
+    white-space: nowrap;
+}
+
+.item72:hover .bar5{
+    animation: bar5 2s;
+}
+
+@keyframes bar5 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+/* .c {
+    border-left-style: solid;
+    border-left-color: #ffa94d;
+    border-left-width: 200px;
+}
+
+.item71:hover .c{
+    animation: c 2s ease-out;
+}
+
+@keyframes c {
+    from {
+        border-left-width: 0px;
+    }
+    to {
+        border-left-width: 200px;
+    }
+} */
+
+/*圖片動畫*/
+.item101 img {
+    transition: filter 0.3s; /**/
+}
+
+.item101:hover img {
+    filter: brightness(0.5); /**/
+}
+
+.item101 p {
+    opacity: 0; /**/
+    color: #fff8e7;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.item101:hover p {
+    opacity: 1; /**/
+}
+
+.item102 img {
+    transition: filter 0.3s;
+}
+
+.item102:hover img {
+    filter: brightness(0.5);
+}
+
+.item102 p {
+    opacity: 0;
+    color: #fff8e7;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.item102:hover p {
+    opacity: 1;
+}
+
+.item122 img {
+    transition: filter 0.3s;
+}
+
+.item122:hover img {
+    filter: brightness(0.5);
+}
+
+.item122 p {
+    opacity: 0;
+    color: #fff8e7;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.item122:hover p {
+    opacity: 1;
+}
+
+.item141 img {
+    transition: filter 0.3s;
+}
+
+.item141:hover img {
+    filter: brightness(0.5);
+}
+
+.item141 p {
+    opacity: 0;
+    color: #fff8e7;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.item141:hover p {
+    opacity: 1;
+}
+
+.item142 img {
+    transition: filter 0.3s;
+}
+
+.item142:hover img {
+    filter: brightness(0.5);
+}
+
+.item142 p {
+    opacity: 0;
+    color: #fff8e7;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.item142:hover p {
+    opacity: 1;
+}
+
+.item162 img {
+    transition: filter 0.3s;
+}
+
+.item162:hover img {
+    filter: brightness(0.5);
+}
+
+.item162 p {
+    opacity: 0;
+    color: #fff8e7;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.item162:hover p {
+    opacity: 1;
+}
+
+.item182 img {
+    transition: filter 0.3s;
+}
+
+.item182:hover img {
+    filter: brightness(0.5);
+}
+
+.item182 p {
+    opacity: 0;
+    color: #fff8e7;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.item182:hover p {
+    opacity: 1;
+}
+
+.item201 img {
+    transition: filter 0.3s;
+}
+
+.item201:hover img {
+    filter: brightness(0.5);
+}
+
+.item201 p {
+    opacity: 0;
+    color: #fff8e7;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.item201:hover p {
+    opacity: 1;
+}
+
+.item202 img {
+    transition: filter 0.3s;
+}
+
+.item202:hover img {
+    filter: brightness(0.5);
+}
+
+.item202 p {
+    opacity: 0;
+    color: #fff8e7;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.item202:hover p {
+    opacity: 1;
+}
+
+/*個人基本資訊*/
+.item3 {
+    grid-area: p3;
+}
+
+.item3 a {
+    background-color: #f9d85e;
+    padding: 0.5%;
+    border-radius: 25%;
+}
+
+.item41 {
+    grid-area: txt41;
+    padding-right: 5%;
+}
+
+.item42 {
+    grid-area: txt42;
+    line-height: clamp(10px, 4vw, 50px); /* 行距隨著視窗變化 */
+}
+
+/* .item43 {
+    grid-area: txt43;
+} */
+
+.item5 {
+    grid-area: txt5;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.item52 {
+    grid-area: txt52;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/*個人專業與技能*/
+.item6 {
+    grid-area: p6;
+}
+
+.item6 a {
+    background-color: #f9d85e;
+    padding: 0.5%;
+    border-radius: 25%;
+}
+
+.item62 {
+    grid-area: p62;
+}
+
+.item71 {
+    grid-area: txt71;
+}
+
+.item72 {
+    grid-area: txt72;
+}
+
+.item73 {
+    grid-area: txt73;
+}
+
+/*個人經歷*/
+.item8 {
+    grid-area: p8;
+}
+
+.item8 a {
+    background-color: #f9d85e;
+    padding: 0.5%;
+    border-radius: 25%;
+}
+
+/* 大一上 */
+/* 社團活動 */
+.item9 {
+    grid-area: title9;
+}
+
+.item101 {
+    grid-area: txt101;
+    padding-right: 5%;
+    position: relative; /**/
+}
+
+.item102 {
+    grid-area: txt102;
+    padding-right: 5%;
+    position: relative;
+}
+
+.item103 {
+    grid-area: txt103;
+    line-height: clamp(10px, 4vw, 50px);
+}
+
+/* 大一下 */
+/* 課程活動 */
+.item11 {
+    grid-area: title11;
+}
+
+.item121 {
+    grid-area: txt121;
+}
+
+.item122 {
+    grid-area: txt122;
+    padding-right: 5%;
+    position: relative;
+}
+
+.item123 {
+    grid-area: txt123;
+    line-height: clamp(10px, 4vw, 50px);
+}
+
+/* 其他活動 */
+.item13 {
+    grid-area: title13;
+}
+
+.item141 {
+    grid-area: txt141;
+    padding-right: 5%;
+    position: relative;
+}
+
+.item142 {
+    grid-area: txt142;
+    padding-right: 5%;
+    position: relative;
+}
+
+.item143 {
+    grid-area: txt143;
+    line-height: clamp(10px, 4vw, 50px);
+}
+
+/* 大二上 */
+/* 課程活動 */
+.item15 {
+    grid-area: title15;
+}
+
+.item161 {
+    grid-area: txt161;
+    padding-right: 5%;
+}
+
+.item162 {
+    grid-area: txt162;
+    padding-right: 5%;
+    position: relative;
+}
+
+.item163 {
+    grid-area: txt163;
+    line-height: clamp(10px, 4vw, 50px);
+}
+
+/* 專案 */
+.item17 {
+    grid-area: title17;
+}
+
+.item181 {
+    grid-area: txt181;
+    padding-right: 5%;
+}
+
+.item182 {
+    grid-area: txt182;
+    padding-right: 5%;
+    position: relative;
+}
+
+.item183 {
+    grid-area: txt183;
+    line-height: clamp(10px, 4vw, 50px);
+}
+
+/* 工作經歷 */
+.item19 {
+    grid-area: title19;
+}
+
+.item201 {
+    grid-area: txt201;
+    padding-right: 5%;
+    position: relative;
+}
+
+.item202 {
+    grid-area: txt202;
+    padding-right: 5%;
+    position: relative;
+}
+
+.item203 {
+    grid-area: txt203;
+    line-height: clamp(10px, 4vw, 50px);
+}
+
+/*聯絡資訊*/
+.item21 {
+    grid-area: p21;
+}
+
+.item21 a {
+    background-color: #f9d85e;
+    padding: 0.5%;
+    border-radius: 25%;
+}
+
+.item221 {
+    grid-area: txt221;
+}
+
+.item222 {
+    grid-area: txt222;
+}
+
+.item223 {
+    grid-area: txt223;
+}
