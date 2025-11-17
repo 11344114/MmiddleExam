@@ -101,7 +101,7 @@ article {
 }
 
 footer {
-    grid-area: footer;
+    /* grid-area: footer; */
     background-color: #6b5b4d;
     color: #fff8e7;
     text-align: center;
